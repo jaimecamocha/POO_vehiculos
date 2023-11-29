@@ -1,7 +1,7 @@
 // JAIME FERNÁNDEZ CALVO
 // https://github.com/jaimecamocha/POO_vehiculos.git
 
-class Vehiculo{
+export class Vehiculo{
     #marca;
     #modelo;
     #color;
@@ -57,6 +57,8 @@ class Vehiculo{
         mostrarResultado(`<p>${datos}</p>`);
     }
 
+
+    //GETTER Y SETTER
     get marca(){
         return this.#marca;
     }
@@ -99,5 +101,5 @@ class Vehiculo{
         this.#cilindrada = cilindrada;
     }
 
-    
+
 }
