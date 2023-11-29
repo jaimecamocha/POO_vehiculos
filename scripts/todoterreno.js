@@ -8,7 +8,7 @@ export class Todoterreno extends Vehiculo(){
 
     //CONSTRUCTOR
     constructor(marca, modelo, color, fabricacion, cilindrada, traccion){
-        this(marca, modelo, color, fabricacion, cilindrada, pasajeros);
+        this(marca, modelo, color, fabricacion, cilindrada);
         this.#traccion = traccion;
     }
 
