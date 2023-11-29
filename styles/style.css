@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Ubuntu:ital@1&family=Young+Serif&display=swap');
+
+p{
+    color: black;
+    font-family: Merriweather;
+    font-size: large;
+}
+
+body{
+    /* Ruta de la imagen */
+    background-image: url('../assets/imgs/goat.jpg');
+    /* Cubre todo el área del body */
+    background-size: cover;
+    /* Evitar que la imagen se repita */
+    background-repeat: no-repeat;
+     /* Hacer que la imagen esté fije */
+     background-attachment: fixed; 
+}
+
+@keyframes moverImagen {
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(1000%);
+    }
+}
+
+#miProfeta{
+    width: 300px;
+    height: 250px;
+    background-image: url('../assets/imgs/mar.jpg');
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
+}
