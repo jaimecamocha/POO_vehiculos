@@ -3,12 +3,12 @@
 
 import { Vehiculo } from './vehiculo.js';
 
-export class Furgoneta extends Vehiculo(){
+export class Furgoneta extends Vehiculo{
     #pasajeros;
 
     //CONSTRUCTOR
     constructor(marca, modelo, color, fabricacion, cilindrada, pasajeros){
-        this(marca, modelo, color, fabricacion, cilindrada, pasajeros);
+        super(marca, modelo, color, fabricacion, cilindrada);
         this.#pasajeros = pasajeros;
     }
 

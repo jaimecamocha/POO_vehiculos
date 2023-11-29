@@ -3,12 +3,12 @@
 
 import { Vehiculo } from './vehiculo.js';
 
-export class Todoterreno extends Vehiculo(){
+export class Todoterreno extends Vehiculo{
     #traccion;
 
     //CONSTRUCTOR
     constructor(marca, modelo, color, fabricacion, cilindrada, traccion){
-        this(marca, modelo, color, fabricacion, cilindrada);
+        super(marca, modelo, color, fabricacion, cilindrada);
         this.#traccion = traccion;
     }
 

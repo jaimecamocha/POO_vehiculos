@@ -1,6 +1,8 @@
 // JAIME FERNÁNDEZ CALVO
 // https://github.com/jaimecamocha/POO_vehiculos.git
 
+import { mostrarResultado } from "./main.js";
+
 export class Vehiculo{
     #marca;
     #modelo;
@@ -18,10 +20,6 @@ export class Vehiculo{
         this.#cilindrada = cilindrada;
     }
 
-    // constructor por defecto o sin parámetros
-    constructor(){
-
-    }
 
     //MÉTODOS
     mostrarDatos(){
@@ -44,17 +42,17 @@ export class Vehiculo{
 
     acelerar(velocidad){
         const mensaje = `<br/>Se ha acelerado hasta ${velocidad}`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
     arrancar(){
         const mensaje = `<br/>El ${this.#modelo} de la marca ${this.#marca} de color ${this.#color} ha arrancado`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
     frenar(){
         const mensaje = `<br/>El ${this.#modelo} de la marca ${this.#marca} de color ${this.#color} ha frenado`;
-        mostrarResultado(`<p>${datos}</p>`);
+        mostrarResultado(`<p>${mensaje}</p>`);
     }
 
 
