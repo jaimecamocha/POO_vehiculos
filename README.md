@@ -1,6 +1,6 @@
 # Programación orientada a objetos: Vehículo
 
-**Autor:** Diego Alonso Molina
+**Autor:** Jaime Fernández Calvo
 
 ## Examen Tema 4
 1. DWEC
